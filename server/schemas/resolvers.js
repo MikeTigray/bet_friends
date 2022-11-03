@@ -12,6 +12,11 @@ const resolvers = {
       const user = await User.create({ username, password });
       return user;
     },
+    updateUser: async (parent, args) => {
+      const user = await User.findByIdAndUpdate(args._id, args, { new: true });
+
+      return user;
+    },
   },
 };
 
