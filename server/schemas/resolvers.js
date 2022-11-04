@@ -18,8 +18,11 @@ const resolvers = {
       return user;
     },
     createBet: async (parent, args) => {
-      const bet = Bet(args);
+      const bet = await Bet.create(args);
       return bet;
+    },
+    removeBet: async (parent, { _id }) => {
+      await Bet.findByIdAndDelete({ _id: _id });
     },
   },
 };

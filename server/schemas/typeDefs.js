@@ -28,6 +28,7 @@ const typeDefs = gql`
       points: Int
       betCreatedBy: ID
     ): Bet
+    removeBet(_id: ID!): Bet
   }
 `;
 
