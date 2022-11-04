@@ -14,11 +14,11 @@ const server = new ApolloServer({
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-app.use("/images", express.static(path.join(__dirname, "../client/images")));
+// app.use("/images", express.static(path.join(__dirname, "../client/images")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client/build/index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "../client/build/index.html"));
+// });
 
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();

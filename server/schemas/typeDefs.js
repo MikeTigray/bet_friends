@@ -12,7 +12,7 @@ const typeDefs = gql`
     description: String
     points: Int
     betDate: String
-    betCreatedBy: ID
+    betCreatedBy: User
   }
 
   type Query {

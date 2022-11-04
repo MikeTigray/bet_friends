@@ -8,6 +8,6 @@ const betSchema = new Schema({
   betCreatedBy: { type: Schema.Types.ObjectId, ref: "User", required: true },
 });
 
-const Bet = model("bet", betSchema);
+const Bet = model("Bet", betSchema);
 
 module.exports = Bet;

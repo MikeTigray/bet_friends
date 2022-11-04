@@ -7,6 +7,6 @@ const userSchema = new Schema({
   credit: { type: Number, default: 2000 },
 });
 
-const User = model("user", userSchema);
+const User = model("User", userSchema);
 
 module.exports = User;
