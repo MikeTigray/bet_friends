@@ -6,9 +6,17 @@ const resolvers = {
       const users = await User.find({});
       return users;
     },
+    getSingleUser: async (parent, { userId }) => {
+      const user = await User.findById({ _id: userId });
+      return user;
+    },
     getAllBets: async () => {
       const bets = await Bet.find({}).populate("betCreatedBy");
       return bets;
+    },
+    getSingleBet: async (parent, { betId }) => {
+      const bet = await Bet.findById({ _id: betId }).populate("betCreatedBy");
+      return bet;
     },
   },
   Mutation: {

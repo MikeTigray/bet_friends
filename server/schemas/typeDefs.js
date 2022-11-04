@@ -17,7 +17,9 @@ const typeDefs = gql`
 
   type Query {
     getAllUsers: [User]
+    getSingleUser(userId: ID!): User
     getAllBets: [Bet]
+    getSingleBet(betId: ID!): Bet
   }
   type Mutation {
     createUser(username: String!, password: String!): User
