@@ -17,6 +17,10 @@ const resolvers = {
 
       return user;
     },
+    createBet: async (parent, args) => {
+      const bet = Bet(args);
+      return bet;
+    },
   },
 };
 

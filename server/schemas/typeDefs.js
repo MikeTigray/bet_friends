@@ -22,6 +22,12 @@ const typeDefs = gql`
   type Mutation {
     createUser(username: String!, password: String!): User
     updateUser(_id: ID, username: String, password: String, credit: Int): User
+    createBet(
+      title: String
+      description: String
+      points: Int
+      betCreatedBy: ID
+    ): Bet
   }
 `;
 
