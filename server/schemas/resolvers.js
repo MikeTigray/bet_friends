@@ -33,8 +33,8 @@ const resolvers = {
       const bet = await Bet.create(args);
       return bet;
     },
-    removeBet: async (parent, { _id }) => {
-      await Bet.findByIdAndDelete({ _id: _id });
+    removeBet: async (parent, { betId }) => {
+      await Bet.findByIdAndDelete({ _id: betId });
     },
   },
 };
