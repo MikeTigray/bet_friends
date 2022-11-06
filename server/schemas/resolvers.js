@@ -1,4 +1,5 @@
 const { User, Bet } = require("../models");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -22,7 +23,8 @@ const resolvers = {
   Mutation: {
     createUser: async (parent, { username, password }) => {
       const user = await User.create({ username, password });
-      return user;
+      const token = signToken(user);
+      return { token, user };
     },
     updateUser: async (parent, args) => {
       const user = await User.findByIdAndUpdate(args._id, args, { new: true });
