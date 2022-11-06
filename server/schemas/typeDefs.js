@@ -14,6 +14,10 @@ const typeDefs = gql`
     betDate: String
     betCreatedBy: User
   }
+  type Auth {
+    token: ID
+    user: User
+  }
 
   type Query {
     getAllUsers: [User]
@@ -22,7 +26,7 @@ const typeDefs = gql`
     getSingleBet(betId: ID!): Bet
   }
   type Mutation {
-    createUser(username: String!, password: String!): User
+    createUser(username: String!, password: String!): Auth
     updateUser(_id: ID, username: String, password: String, credit: Int): User
     createBet(
       title: String
@@ -31,6 +35,7 @@ const typeDefs = gql`
       betCreatedBy: ID
     ): Bet
     removeBet(betId: ID!): Bet
+    login(username: String!, password: String!): Auth
   }
 `;
 
