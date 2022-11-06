@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function Navigation() {
   return (
     <div className="border-b-2  border-secondary">
