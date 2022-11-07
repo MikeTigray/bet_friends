@@ -5,22 +5,22 @@ import React from "react";
 
 export default function SingIn() {
   return (
-    <div className="bg-black h-fit flex items-center justify-center py-[15rem]">
-      <div className="bg-gradient-to-r from-red-600 via-indigo-600 to-blue-600 h-content rounded-[25px] flex justify-between">
-        <div>
+    <div className="bg-black  flex items-center justify-center py-[15rem]">
+      <div className="bg-gradient-to-r from-red-600 via-indigo-600 to-blue-600 w-[90%] rounded-[25px] flex justify-between ">
+        <div className="w-[50%] ">
           {" "}
-          <form className="flex items-center flex-col gap-[3rem] p-[5rem]">
+          <form className="flex items-center flex-col gap-[3rem] p-[5rem] ">
             <h1 className="text-7xl">Get Started</h1>
             <input
-              className=" bg-transparent placeholder-black border-black  border-b-2 w-[30rem]"
+              className=" bg-transparent placeholder-black border-black  border-b-2 w-[100%]"
               placeholder="Name"
             />
             <input
-              className=" bg-transparent placeholder-black border-black border-b-2  w-[30rem] "
+              className=" bg-transparent placeholder-black border-black border-b-2  w-[100%] "
               placeholder="Email"
             />
             <input
-              className=" bg-transparent placeholder-black border-black border-b-2  w-[30rem] "
+              className=" bg-transparent placeholder-black border-black border-b-2  w-[100%] "
               placeholder="Password"
             />
             <button className="text-black rounded-md w-[15rem] py-[.8rem] bg-gradient-to-r from-blue-600 via-indigo-600 to-red-600">
@@ -76,9 +76,9 @@ export default function SingIn() {
           </form>
         </div>
 
-        <div className="h-content">
+        <div className="w-[50%]">
           <Image
-            className="rounded-[25px] max-h-[100%] "
+            className="rounded-[25px] min-h-[100%] "
             src={signin}
             alt="Picture of the author"
           />

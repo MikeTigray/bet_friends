@@ -11,6 +11,7 @@ module.exports = {
         white: "#ffffff",
         primary: "#000000",
         secondary: "#FFF8EA",
+        darkblue: "#00072C",
       },
       textColor: {
         transparent: "transparent",
@@ -23,7 +24,7 @@ module.exports = {
         didot: "didot",
         bigCasion: "Big Caslon",
         montaga: "Montaga",
-        Montserrat: "Montserrat",
+        Montserrat: ["Montserrat", "sans-serif", "serif"],
       },
       boxShadow: {
         bright: " 0 1rem 2rem rgba(255, 255, 255, 0.2)",
