@@ -5,24 +5,26 @@ import React from "react";
 
 export default function SingIn() {
   return (
-    <div className="bg-black  flex items-center justify-center py-[15rem]">
-      <div className="bg-gradient-to-r from-red-600 via-indigo-600 to-blue-600 w-[90%] rounded-[25px] flex justify-between ">
+    <div className="bg-black   text-black  flex items-center justify-center py-[15rem] ">
+      <div className="bg-gradient-to-r from-blue-600 via-[#800180] to-red-600 w-[90%] rounded-[25px] flex justify-between ">
         <div className="w-[50%] ">
           {" "}
-          <form className="flex items-center flex-col gap-[3rem] p-[5rem] ">
-            <h1 className="text-7xl">Get Started</h1>
-            <input
-              className=" bg-transparent placeholder-black border-black  border-b-2 w-[100%]"
-              placeholder="Name"
-            />
-            <input
-              className=" bg-transparent placeholder-black border-black border-b-2  w-[100%] "
-              placeholder="Email"
-            />
-            <input
-              className=" bg-transparent placeholder-black border-black border-b-2  w-[100%] "
-              placeholder="Password"
-            />
+          <form className="flex items-center flex-col text-2xl p-[3rem] justify-evenly h-[100%]">
+            <h1 className="text-7xl font-bold my-11">Get Started.</h1>
+            <div className="flex flex-col w-[45rem] gap-[6.5rem]">
+              <input
+                className=" bg-transparent placeholder-black border-black  border-b-2 "
+                placeholder="Name"
+              />
+              <input
+                className=" bg-transparent placeholder-black border-black border-b-2"
+                placeholder="Email"
+              />
+              <input
+                className=" bg-transparent placeholder-black border-black border-b-2"
+                placeholder="Password"
+              />
+            </div>
             <button className="text-black rounded-md w-[15rem] py-[.8rem] bg-gradient-to-r from-blue-600 via-indigo-600 to-red-600">
               <Link
                 href={{
@@ -33,7 +35,7 @@ export default function SingIn() {
                 Sign In{" "}
               </Link>
             </button>
-            <div className=" flex items-center">
+            <div className=" flex items-center gap-5">
               <hr className="w-[10rem]  " />
               <h1 className="mx-3"> Or sign up with </h1>
               <hr className="w-[10rem]" />
