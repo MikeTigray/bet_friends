@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function HomeNavigation() {
@@ -13,7 +14,7 @@ export default function HomeNavigation() {
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-house-door-fill"
+              className="bi bi-house-door-fill"
               viewBox="0 0 16 16"
             >
               <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
@@ -26,7 +27,7 @@ export default function HomeNavigation() {
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-bell-fill"
+              className="bi bi-bell-fill"
               viewBox="0 0 16 16"
             >
               <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
@@ -39,12 +40,21 @@ export default function HomeNavigation() {
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-hammer"
+              className="bi bi-hammer"
               viewBox="0 0 16 16"
             >
               <path d="M9.972 2.508a.5.5 0 0 0-.16-.556l-.178-.129a5.009 5.009 0 0 0-2.076-.783C6.215.862 4.504 1.229 2.84 3.133H1.786a.5.5 0 0 0-.354.147L.146 4.567a.5.5 0 0 0 0 .706l2.571 2.579a.5.5 0 0 0 .708 0l1.286-1.29a.5.5 0 0 0 .146-.353V5.57l8.387 8.873A.5.5 0 0 0 14 14.5l1.5-1.5a.5.5 0 0 0 .017-.689l-9.129-8.63c.747-.456 1.772-.839 3.112-.839a.5.5 0 0 0 .472-.334z" />
             </svg>
-            <h1>Judgment</h1>
+            <h1>
+              <Link
+                href={{
+                  pathname: "/user/judgement",
+                }}
+              >
+                {" "}
+                Judgment
+              </Link>
+            </h1>
           </li>
           <li className="flex items-center gap-4">
             <svg
@@ -52,7 +62,7 @@ export default function HomeNavigation() {
               width="25"
               height="25"
               fill="currentColor"
-              class="bi bi-box-arrow-left"
+              className="bi bi-box-arrow-left"
               viewBox="0 0 16 16"
             >
               <path
