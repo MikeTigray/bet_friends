@@ -12,13 +12,15 @@ module.exports = {
         primary: "#000000",
         secondary: "#FFF8EA",
         darkblue: "#00072C",
+        coin: "#181C31",
+        secondaryblue: "#000623",
       },
       textColor: {
         transparent: "transparent",
         secondary: "#FFF8EA",
         black: "#000000",
         white: "#ffffff",
-        lightgrey: "#F5F5F5",
+        lightgrey: "#C6BEC3",
       },
       fontFamily: {
         didot: "didot",

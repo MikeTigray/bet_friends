@@ -1,11 +1,12 @@
 import React from "react";
 import HomeNavigation from "../../components/HomeNavigation";
+import UserPage from "../../components/UserPage";
 
 export default function index() {
   return (
-    <div className="bg-black h-screen flex">
+    <div className="bg-black  text-lightgrey flex">
       <HomeNavigation />
-      <div className="bg-slate-50"> top</div>
+      <UserPage />
     </div>
   );
 }
