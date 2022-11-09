@@ -11,17 +11,20 @@ module.exports = {
         white: "#ffffff",
         primary: "#000000",
         secondary: "#FFF8EA",
+        darkblue: "#00072C",
       },
       textColor: {
-        tansparent: "transparent",
+        transparent: "transparent",
         secondary: "#FFF8EA",
         black: "#000000",
         white: "#ffffff",
+        lightgrey: "#F5F5F5",
       },
       fontFamily: {
         didot: "didot",
         bigCasion: "Big Caslon",
         montaga: "Montaga",
+        Montserrat: ["Montserrat", "sans-serif", "serif"],
       },
       boxShadow: {
         bright: " 0 1rem 2rem rgba(255, 255, 255, 0.2)",
