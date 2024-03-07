@@ -3,7 +3,7 @@ import React from "react";
 
 export default function HomeNavigation() {
   return (
-    <div className="bg-darkblue w-[20%]">
+    <div className="bg-darkblue w-[20%] border-r-2 border-grey-200">
       {" "}
       <div className="flex flex-col mx-6 font-thin font-Montserrat">
         <h1 className=" text-4xl my-[4rem] pb-2">MICHEAL ABAY</h1>
@@ -19,7 +19,9 @@ export default function HomeNavigation() {
             >
               <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z" />
             </svg>
-            <h1>Home</h1>
+            <h1>
+              <Link href={{ pathname: "/user" }}>Home</Link>
+            </h1>
           </li>
           <li className="flex items-center gap-4 ">
             <svg
@@ -32,7 +34,9 @@ export default function HomeNavigation() {
             >
               <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
             </svg>
-            <h1>Notifcation</h1>
+            <h1>
+              <Link href={{ pathname: "/user/notification" }}>Notifcation</Link>
+            </h1>
           </li>
           <li className="flex items-center gap-4">
             <svg
@@ -74,7 +78,7 @@ export default function HomeNavigation() {
                 d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"
               />
             </svg>
-            <h1>Sign-out</h1>
+            <Link href={{ pathname: "/" }}>Sign-out</Link>
           </li>
         </ul>
       </div>
